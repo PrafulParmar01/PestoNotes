@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_12sdp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/homeToolBar"
+        android:background="@color/colorTheme"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:text="Pesto Tasks"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btnAccount"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_account_circle"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutBottomNavigation"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/homeToolBar"
+        android:background="@color/colorBackground"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewList"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No task found"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:id="@+id/txtNoData"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnAddTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_18sdp"
+            app:backgroundTint="@color/colorBlack"
+            app:tint="@android:color/white"
+            android:contentDescription="@string/label_add_tasks" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

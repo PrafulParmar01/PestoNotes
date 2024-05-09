@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739255778382",
+    "project_id": "task-management-8110",
+    "storage_bucket": "task-management-8110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739255778382:android:f0e32c8d4e9da3735dd71f",
+        "android_client_info": {
+          "package_name": "com.pesto.task.management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKsbgpPtJP-ui6XHvL8WRgFJxlDh1nKy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

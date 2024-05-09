@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.pesto.task.management",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "outputFile": "HR Navigator Business_v1.0.0(1)_2024_05_09_1758.apk"
+    }
+  ],
+  "elementType": "File"
+}

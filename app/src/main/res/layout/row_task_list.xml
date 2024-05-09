@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    android:background="@drawable/rounded_card"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:src="@drawable/ic_circle_progress" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_toEndOf="@+id/imgStatus"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@color/colorTheme"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="Description"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutControls"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="2020-05-22 15:44 PM"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/_11ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnEdit"
+            android:gravity="center_vertical"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toStartOf="@+id/btnDelete"
+            android:src="@drawable/ic_edit" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnDelete"
+            android:gravity="center_vertical"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
